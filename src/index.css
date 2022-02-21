@@ -1,13 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box; 
+}
+
+:root {
+  --gray: hsla(0, 0%, 88%, 1);
+  --darken-gray: hsla(0, 0%, 68%, 1);
+  --grey: hsla(0, 0%, 88%, 1);
+  --darken-grey: hsla(0, 0%, 68%, 1);
+  --blue: hsla(231, 99%, 62%, 1);
+  --darken-blue: hsla(223, 100%, 40%, 1);
+  --lighten-blue: hsla(224, 100%, 58%, 0.1);
+  --silver: hsla(199, 18%, 33%, 1);
+  --darken-silver: hsla(198, 35%, 17%, 1);
+  --red: hsla(0, 65%, 51%, 1);
+  --darken-red: hsla(357, 100%, 30%, 1);
+  --disabled-gray: hsla(0, 0%, 62%, 1);
+  --black: hsla(0, 0%, 25%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --component-text: hsla(0, 0%, 20%, 1);
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
