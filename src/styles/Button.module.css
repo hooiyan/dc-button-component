@@ -1,12 +1,51 @@
-.default {
-  background-color: var(--gray);
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px;
-  text-transform: capitalize;
-}
-
 .name {
   color: var(--component-text);
   font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.grayName {
+  color: var(--gray-text);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.btn {
+  background-color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: capitalize;
+}
+
+.default {
+  background-color: var(--gray);
+}
+
+.defaultHover {
+  background-color: var(--darken-gray);
+}
+
+.outline {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.outlineHover {
+  background-color: var(--lighten-blue);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.text {
+  color: var(--blue);
+  padding: 0;
+}
+
+.textHover {
+  background-color: var(--lighten-blue);
+  color: var(--blue);
+  padding: 8px 16px;
 }

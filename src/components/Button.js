@@ -1,12 +1,12 @@
-import styles from "../styles/Button.module.css";
+import styles from '../styles/Button.module.css';
 
-const Button = ({ componentName, text }) => {
+const Button = ({ css, description, grayText, text = "Default" }) => {
   return (
     <div>
-      <p className={styles.name}>{componentName}</p>
-      <btn className={styles.default}>{text}</btn>
+      <p className={grayText ? styles.grayName : styles.name}>{description}</p>
+      <button className={[styles[`${css}`], styles.btn].join(' ')}>{text}</button>
     </div>
-  );
-};
+  )
+}
 
 export default Button;
