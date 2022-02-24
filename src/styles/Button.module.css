@@ -1,3 +1,10 @@
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
 .name {
   color: var(--component-text);
   font-size: 1.2rem;
@@ -14,6 +21,8 @@
   background-color: var(--white);
   border: none;
   border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  color: var(--black);
   cursor: pointer;
   font-weight: 500;
   padding: 8px 16px;
@@ -30,22 +39,44 @@
 
 .outline {
   border: 1px solid var(--blue);
+  box-shadow: none;
   color: var(--blue);
 }
 
 .outlineHover {
   background-color: var(--lighten-blue);
   border: 1px solid var(--blue);
+  box-shadow: none;
   color: var(--blue);
 }
 
 .text {
+  box-shadow: none;
   color: var(--blue);
   padding: 0;
 }
 
 .textHover {
   background-color: var(--lighten-blue);
+  box-shadow: none;
   color: var(--blue);
   padding: 8px 16px;
+}
+
+.disableShadow {
+  background-color: var(--darken-blue);
+  box-shadow: none;
+  color: var(--white);
+}
+
+.disabled {
+  background-color: var(--disabled-gray);
+  box-shadow: none;
+  color: var(--gray-text);
+}
+
+.textDisabled {
+  box-shadow: none;
+  color: var(--gray-text);
+  padding: 0;
 }
