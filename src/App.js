@@ -2,10 +2,13 @@ import "./App.css";
 import styles from "./styles/Button.module.css";
 
 import Button from "./components/Button";
+import IconButton from "./components/IconButton";
+
+import { MdAddShoppingCart } from "react-icons/md";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <section className={styles.group}>
         <Button css="default" description="<Button />" />
         <Button grayText css="defaultHover" description="&:hover, &:focus" />
@@ -29,6 +32,19 @@ function App() {
           css="textDisabled"
           description={`<Button variant="text" disabled />`}
           text="Disabled"
+        />
+      </section>
+      <section className={styles.group}>
+        <IconButton
+          left
+          css="icon"
+          description={`<Button startIcon="local_grocery_store" />`}
+          icon={<MdAddShoppingCart />}
+        />
+         <IconButton
+          css="icon"
+          description={`<Button endIcon="local_grocery_store" />`}
+          icon={<MdAddShoppingCart />}
         />
       </section>
     </div>

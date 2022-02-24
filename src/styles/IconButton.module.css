@@ -1,0 +1,18 @@
+.icon {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: base;
+}
+
+.left {
+  margin-right: 5px;
+  height: 14px;
+  width: 13.2px;
+}
+
+.right {
+  margin-left: 5px;
+  height: 14px;
+  width: 13.2px;
+}
