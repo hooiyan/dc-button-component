@@ -41,11 +41,16 @@ function App() {
           description={`<Button startIcon="local_grocery_store" />`}
           icon={<MdAddShoppingCart />}
         />
-         <IconButton
+        <IconButton
           css="icon"
           description={`<Button endIcon="local_grocery_store" />`}
           icon={<MdAddShoppingCart />}
         />
+      </section>
+      <section className={styles.group}>
+        <Button css="sm" description={`<Button size="sm" />`} />
+        <Button css="md" description={`<Button size="md" />`} />
+        <Button css="lg" description={`<Button size="lg" />`} />
       </section>
     </div>
   );

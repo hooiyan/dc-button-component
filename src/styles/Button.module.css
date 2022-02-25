@@ -1,6 +1,6 @@
 .group {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   width: 500px;
 }
@@ -25,7 +25,7 @@
   color: var(--black);
   cursor: pointer;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: var(--md-padding);
   text-transform: capitalize;
 }
 
@@ -60,7 +60,7 @@
   background-color: var(--lighten-blue);
   box-shadow: none;
   color: var(--blue);
-  padding: 8px 16px;
+  padding: var(--md-padding);
 }
 
 .disableShadow {
@@ -79,4 +79,22 @@
   box-shadow: none;
   color: var(--gray-text);
   padding: 0;
+}
+
+.sm {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--sm-padding);
+}
+
+.md {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--md-padding);
+}
+
+.lg {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--lg-padding);
 }
